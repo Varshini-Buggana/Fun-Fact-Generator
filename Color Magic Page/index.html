@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Magic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            transition: background-color 0.5s ease;
+        }
+        
+        .color-btn {
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            color: white;
+            transition: transform 0.2s ease;
+        }
+        
+        .color-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        .red { background-color: #e74c3c; }
+        .blue { background-color: #3498db; }
+        .green { background-color: #2ecc71; }
+        .purple { background-color: #9b59b6; }
+        .orange { background-color: #f39c12; }
+    </style>
+</head>
+<body>
+    <h1>🎨 Color Magic Tool</h1>
+    <p>Click the buttons to change the background!</p>
+    
+    <button class="color-btn red" onclick="changeColor('#e74c3c')">Red</button>
+    <button class="color-btn blue" onclick="changeColor('#3498db')">Blue</button>
+    <button class="color-btn green" onclick="changeColor('#2ecc71')">Green</button>
+    <button class="color-btn purple" onclick="changeColor('#9b59b6')">Purple</button>
+    <button class="color-btn orange" onclick="changeColor('#f39c12')">Orange</button>
+    
+    <script>
+        function changeColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
